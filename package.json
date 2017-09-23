@@ -1,12 +1,20 @@
 {
-  "name": "rxjs5",
+  "name": "afrxjs5",
   "version": "1.0.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server --watch --inline",
+    "postinstall": "typings install"
   },
   "author": "Aftab Ansari",
   "license": "ISC",
   "dependencies": {
     "rxjs": "^5.4.3"
+  },
+  "devDependencies": {
+    "ts-loader": "^2.3.7",
+    "typescript": "^2.5.2",
+    "typings": "^2.1.1",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.8.2"
   }
 }
